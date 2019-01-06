@@ -1,23 +1,22 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+    <div>
+        <login-form></login-form>
+    </div>
 </template>
 
 <script>
+/*
+  written by Conan
+  2018-12-25
+*/
+import LoginForm from '../components/LoginForm';
 export default {
-  name: 'App'
+  name: 'QuizApply',
+  components: {
+    LoginForm
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

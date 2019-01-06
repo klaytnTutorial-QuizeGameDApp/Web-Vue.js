@@ -1,23 +1,34 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+<div id="app">
+ <v-app>
+   <div style="background-color:white">
+     <!-- <navigation-bar></navigation-bar> -->
+    <v-content>
+      <router-view/>
+    </v-content>
+    <!-- <footer-bar></footer-bar> -->
+   </div>
+
+  </v-app>
+</div>
+
 </template>
 
 <script>
+/*
+  written by 배지원
+  2018-07-31
+*/
+// import NavigationBar from './components/NavigationBar';
+// import FooterBar from './components/Footer';
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    // NavigationBar,
+    // FooterBar
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
